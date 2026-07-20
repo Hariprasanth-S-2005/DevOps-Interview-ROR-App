@@ -1,0 +1,11 @@
+I have created a folder named terraform, in that I have added the infrastructure code,
+To comply with scalability, reliability, efficiency following things were done,
+
+1. Utilized modules to create services for better reusability
+2. Added two separate variable files under the `terraform/environments` folder, to track the state file of dev and prod environment separately
+3. Utilized Github actions to offload the repetative cmd executions for building, planning, deploying
+4. Stored the database password in Github env variable and passed to the pipeline, not using secrets manager since the application requires the credentials via env variables
+5. Used github commit sha as the tag for ecr images for better tracking
+6. The piepline has three jobs, build, plan, apply. In an real environment separate jobs for both dev and prd running in separate tagged runners in used.
+7. Used delete protection to the resources like DB, and ALB
+
