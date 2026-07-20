@@ -41,5 +41,5 @@ jobs:
         run: |
           terraform apply \
             -auto-approve \
-            -var-file="environments/dev.tfvars" \
+            -var-file="environments/dev/dev.tfvars" \
             -var="image_tag=${{ github.event.inputs.image_tag }}"
