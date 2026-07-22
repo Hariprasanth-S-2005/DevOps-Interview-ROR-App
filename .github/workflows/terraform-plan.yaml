@@ -9,7 +9,7 @@ on:
         type: string
 
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: ap-south-1
   TF_DIR: terraform
   DB_PASSWORD: ${{ secrets.TF_VAR_DB_PASSWORD }}
 

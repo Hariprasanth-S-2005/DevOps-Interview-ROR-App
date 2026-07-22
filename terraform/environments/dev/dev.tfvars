@@ -1,6 +1,6 @@
 project_name   = "myapp"
 environment    = "dev"
-s3_bucket_name = "myapp-dev-data-unique-suffix"
+s3_bucket_name = "myapp-dev-data-unique-suffix-1"
 
 ecr_image = "123456789012.dkr.ecr.ap-south-1.amazonaws.com/myapp-dev"
 image_tag = "latest"

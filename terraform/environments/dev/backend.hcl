@@ -1,5 +1,5 @@
-bucket       = "myapp-dev-terraform-state-unique-suffix"
+bucket       = "mallow-ror-tfstate-aravindh"
 key          = "platform/terraform.tfstate"
-region       = "us-east-1"
+region       = "ap-south-1"
 encrypt      = true
 use_lockfile = true
