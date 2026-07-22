@@ -7,7 +7,7 @@ on:
 
 env:
   AWS_REGION: ap-south-1
-  ECR_REPOSITORY: ror-app
+  ECR_REPOSITORY: myapp-dev
 
 jobs:
   build:
