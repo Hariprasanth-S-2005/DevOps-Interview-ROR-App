@@ -2,7 +2,7 @@ project_name   = "myapp"
 environment    = "prd"
 s3_bucket_name = "myapp-prd-data-unique-suffix"
 
-ecr_image = "123456789012.dkr.ecr.ap-south-1.amazonaws.com/myapp-prd"
+ecr_image = "604187215739.dkr.ecr.ap-south-1.amazonaws.com/myapp-prd"
 image_tag = "latest"
 
 vpc_cidr             = "10.1.0.0/16"

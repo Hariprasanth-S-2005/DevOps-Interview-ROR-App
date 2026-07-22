@@ -16,5 +16,5 @@ COPY docker/app/entrypoint.sh /usr/bin/entrypoint.sh
 
 RUN sed -i 's/\r$//' /usr/bin/entrypoint.sh && chmod +x /usr/bin/entrypoint.sh
 ENTRYPOINT ["/usr/bin/entrypoint.sh"]
-EXPOSE 3000
+EXPOSE 8080
 CMD ["bundle", "exec", "puma", "-C", "config/puma.rb"]
