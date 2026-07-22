@@ -30,7 +30,7 @@ variable "engine_version" {
 
 variable "instance_class" {
   type    = string
-  default = "db.t4g.medium"
+  default = "db.t3.micro"
 }
 
 variable "allocated_storage" {

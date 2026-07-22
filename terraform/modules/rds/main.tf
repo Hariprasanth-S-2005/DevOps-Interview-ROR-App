@@ -23,7 +23,7 @@ resource "aws_db_instance" "this" {
   db_subnet_group_name   = aws_db_subnet_group.this.name
   vpc_security_group_ids = [var.security_group_id]
   publicly_accessible    = false
-  multi_az               = true
+  multi_az               = false
 
   backup_retention_period   = var.backup_retention_days
   backup_window             = "18:00-18:30"
