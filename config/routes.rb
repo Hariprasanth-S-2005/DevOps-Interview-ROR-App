@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :posts
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  get "/health", to: proc { [200, {}, ["OK"]] }
 
-  # Defines the root path route ("/")
+  resources :posts
+
   root "posts#index"
 end
